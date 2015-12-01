@@ -18,8 +18,8 @@ NSUs">
 Apple在iOS9上推出了三种搜索方式:
 
 NSUs">
-<meta property="og:image" content="http://yoursite.com/~/img.png">
-<meta property="og:updated_time" content="2015-07-01T12:22:56.000Z">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/6cb9ee11gw1eykk8nxmt8j20dj0m90uu.jpg">
+<meta property="og:updated_time" content="2015-12-01T15:13:22.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS 9 Search Feature">
 <meta name="twitter:description" content="###iOS 9 Search在WWDC2015大会上苹果隆重介绍了iOS9的Search功能，以前只能搜搜邮件，Safari History以及短信的Search功能现在完全整合了Spotlight之后，可以搜索任意App配置的内容，如果你的App有自己的Web网站的话，还可以通过Safari来搜索web网站上配置的内容。可以说是非常强大。
@@ -126,7 +126,7 @@ NSUs">
 <p>CoreSpotlight生成的搜索结果可以用于本设备展示，不支持Safari搜索。可以动态添加更新以及删除搜索item。</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="typename">void</span>)createSearchForSpotlight</span><br><span class="line">&#123;</span><br><span class="line">	 <span class="comment">// 1. 创建search item的attribute</span></span><br><span class="line">    CSSearchableItemAttributeSet *searchItemSet = [[CSSearchableItemAttributeSet alloc] <span class="string">initWithItemContentType:</span> @<span class="string">"com.cocoamad.testos9"</span>];</span><br><span class="line">    searchItemSet.title = @<span class="string">"Spotlight Search Deno"</span>;</span><br><span class="line">    searchItemSet.keywords = @[@<span class="string">"pennyli"</span>];</span><br><span class="line">    searchItemSet.contentDescription = @<span class="string">"this is a spotlight search demo"</span>;</span><br><span class="line">    searchItemSet.thumbnailData = UIImagePNGRepresentation([UIImage <span class="string">imageNamed:</span> @<span class="string">"1"</span>]);</span><br><span class="line"></span><br><span class="line">	 <span class="comment">// 2. 创建search item</span></span><br><span class="line">    CSSearchableItem *item = [[CSSearchableItem alloc] <span class="string">initWithUniqueIdentifier:</span> @<span class="string">"1"</span> <span class="string">domainIdentifier:</span> @<span class="string">"domain"</span> <span class="string">attributeSet:</span> searchItemSet];</span><br><span class="line"></span><br><span class="line">	 <span class="comment">// 3. 索引search item</span></span><br><span class="line">    [[CSSearchableIndex defaultSearchableIndex] <span class="string">indexSearchableItems:</span> @[item] <span class="string">completionHandler:</span>^(NSError * __nullable error) &#123;</span><br><span class="line">        NSLog(@<span class="string">"Search item indexed"</span>);</span><br><span class="line">    &#125;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>运行, 当在搜索框输入“pennyli”之后，出现配置好的search result.</p>
-<p><img src="~/img.png" alt=""></p>
+<p><img src="http://ww2.sinaimg.cn/large/6cb9ee11gw1eykk8nxmt8j20dj0m90uu.jpg" alt=""></p>
 <p>在AppDelegate里面添加同NSUserActivity一样的响应方法</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)application:(<span class="built_in">UIApplication</span> *)application continueUserActivity:(<span class="built_in">NSUserActivity</span> *)userActivity restorationHandler:</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSString</span> *activityType = userActivity<span class="variable">.activityType</span>;</span><br><span class="line">	<span class="keyword">if</span> ([activityType isEqual: CSSearchableItemActionType]) &#123;</span><br><span class="line">        <span class="built_in">NSString</span> *uniqueIdentifier = [userActivity<span class="variable">.userInfo</span> 												objectForKey:CSSearchableItemActivityIdentifier];</span><br><span class="line">        <span class="comment">// do something</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这里和NSUserActivity的Search不同的是，NSUserActivity的Type是自己定义的scheum, Spotlight的是CSSearchableItemActionType，然后再根据创建search item指定的唯一identifier进行对应的点击事件绑定。</p>
@@ -142,7 +142,7 @@ NSUs">
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://yoursite.com/2015/06/28/2015-06-28/" data-id="cihnirtzs000012sp3nisy18a" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://yoursite.com/2015/06/28/2015-06-28/" data-id="cihniyjy200002sspdlj0lrej" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
