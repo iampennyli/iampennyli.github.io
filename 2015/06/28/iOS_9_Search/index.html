@@ -24,7 +24,7 @@ Apple在iOS9上推出了三种搜索方式:
 
 NSUserA">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/6cb9ee11gw1eykk8nxmt8j20dj0m90uu.jpg">
-<meta property="og:updated_time" content="2015-12-02T14:31:59.000Z">
+<meta property="og:updated_time" content="2015-12-02T14:50:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS 9 Search Feature">
 <meta name="twitter:description" content="iOS 9 Search在WWDC2015大会上苹果隆重介绍了iOS9的Search功能，以前只能搜搜邮件，Safari History以及短信的Search功能现在完全整合了Spotlight之后，可以搜索任意App配置的内容，如果你的App有自己的Web网站的话，还可以通过Safari来搜索web网站上配置的内容。可以说是非常强大。
@@ -137,6 +137,7 @@ var _hmt = _hmt || [];
 </ul>
 <p>NSUserActivity只能用于HandOff功能，也就是说你本机配置了之后，本机是搜索不到该配置的内容的，只能通过HandOff将搜索结果传递到其他iOS设备上，通过Spotlight和Safari进行搜索。</p>
 <p>NSUserActivity还有个重要的功能就是容许将搜索结果公开到苹果服务器，服务器通过算法得出搜索结果是否有效，这样其他用户在搜索的时候可以自动匹配到最佳的结果。</p>
+<a id="more"></a>
 <p>在工程中配置NSUserActivity搜索结果</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> - (<span class="keyword">void</span>)createSearchForUserActivity</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSUserActivity</span> *userActivity = [[<span class="built_in">NSUserActivity</span> alloc] initWithActivityType: <span class="string">@"com.cocoamad.SearchDemo.search"</span>];</span><br><span class="line">    userActivity<span class="variable">.title</span> = <span class="string">@"NSUserActivity Search Demo"</span>;</span><br><span class="line">    <span class="comment">// 搜索关键字</span></span><br><span class="line">    userActivity<span class="variable">.keywords</span> = [<span class="built_in">NSSet</span> setWithArray: @[<span class="string">@"NSUserActivity"</span>]];</span><br><span class="line">    <span class="comment">// extra info</span></span><br><span class="line">    userActivity<span class="variable">.userInfo</span> = @&#123;<span class="string">@"author"</span>:<span class="string">@"pennyli"</span>&#125;;</span><br><span class="line">    <span class="comment">// 支持Search</span></span><br><span class="line">    userActivity<span class="variable">.eligibleForSearch</span> = <span class="literal">YES</span>;</span><br><span class="line">    <span class="comment">// 是否支持HandOff</span></span><br><span class="line">    userActivity<span class="variable">.eligibleForHandoff</span> = <span class="literal">YES</span>;</span><br><span class="line">    </span><br><span class="line">    [userActivity becomeCurrent];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>在AppDelegate配置对应点击后的响应事件</p>
@@ -166,7 +167,7 @@ var _hmt = _hmt || [];
     
     <footer class="article-footer">
       
-        <a data-url="http://penny.li/2015/06/28/iOS_9_Search/" data-id="cihox60n40001d3spiw70w9lr" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://penny.li/2015/06/28/iOS_9_Search/" data-id="cihoxniun0001emsphwnfrkm8" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
