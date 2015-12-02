@@ -133,8 +133,7 @@ var _hmt = _hmt || [];
 <p>在AppDelegate配置对应点击后的响应事件</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)application:(<span class="built_in">UIApplication</span> *)application continueUserActivity:(<span class="built_in">NSUserActivity</span> *)userActivity restorationHandler:</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSString</span> *activityType = userActivity<span class="variable">.activityType</span>;</span><br><span class="line">    <span class="keyword">if</span> ([activityType isEqual: <span class="string">@"com.cocoamad.com.cocoamad.SearchDemo.search"</span>]) &#123;</span><br><span class="line">        <span class="comment">// Handle restoration for values provided in userInfo</span></span><br><span class="line">        <span class="comment">// do something</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <pre><code><span class="label">Note:</span>发现不管怎么样配置，本地都无法搜索到结果，在WWDC Session里面Apple也没有验证这个点，不知道是否是NSUserActivity只能适用于HandOff？
-</code></pre><p>####CoreSpotlight</p>
-<ul>
+</code></pre><h4 id="CoreSpotlight">CoreSpotlight</h4><ul>
 <li>Spotlight Search Only</li>
 <li>Add, Update, Delete item</li>
 </ul>
@@ -158,7 +157,7 @@ var _hmt = _hmt || [];
     
     <footer class="article-footer">
       
-        <a data-url="http://penny.li/2015/06/28/iOS_9_Search/" data-id="cihowu31f0000aaspz948gclx" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://penny.li/2015/06/28/iOS_9_Search/" data-id="cihowx2sr0001b4sp96gxznfj" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
@@ -207,7 +206,7 @@ var _hmt = _hmt || [];
     
     <footer class="article-footer">
       
-        <a data-url="http://penny.li/2015/04/05/aTranslator/" data-id="cihowu32k0001aaspb4aguprp" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://penny.li/2015/04/05/aTranslator/" data-id="cihowx2sw0002b4spi1jcltlm" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
