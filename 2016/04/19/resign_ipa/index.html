@@ -19,7 +19,7 @@ AirSign没有用过，但是iReSign只支持单Target，意思就是你的iPA不
 <meta property="og:site_name" content="pennyli's blog">
 <meta property="og:description" content="日常iOS开发都会遇到这样的需求，如何通过脚本动态修改IPA的Bundle ID从而实现一机多包呢？实际上现在很多开源的App已经可以满足这样的需求，比如iReSign，或者如果你愿意付费的话甚至可以购买拥有漂亮GUI的AirSign。
 AirSign没有用过，但是iReSign只支持单Target，意思就是你的iPA不能拥有任何Extension,比如Widget，Share,或者Watch等，">
-<meta property="og:updated_time" content="2016-04-19T12:10:55.000Z">
+<meta property="og:updated_time" content="2016-04-19T12:20:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IPA多Target重签名以及自动修改Bundle ID">
 <meta name="twitter:description" content="日常iOS开发都会遇到这样的需求，如何通过脚本动态修改IPA的Bundle ID从而实现一机多包呢？实际上现在很多开源的App已经可以满足这样的需求，比如iReSign，或者如果你愿意付费的话甚至可以购买拥有漂亮GUI的AirSign。
@@ -128,7 +128,6 @@ var _hmt = _hmt || [];
 <p>##步骤</p>
 <p>###解压iPA<br>iPA实际上是压缩的格式，你可以把他理解成zip格式</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip -q $IPA_PATH $TMP_PATH</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
 <p>###替换Provisioning Profiles<br>打开解压的包可以看到<strong>embedded.mobileprovision</strong>这样的文件，这个就是原始的打包Provisioning Profile,现在使用新生成的Profile来替换原始的。</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp $PROFILE_PATH/IPA_NEW_PROFILE.mobileprovision $TMP_PATH/Payload/mttlite.app/embedded.mobileprovision&#10;cp $PROFILE_PATH/IPA_WIDGET_NEW_PROFILE.mobileprovision $TMP_PATH/Payload/mttlite.app/PlugIns/QQBrowserToday.appex/embedded.mobileprovision&#10;cp $PROFILE_PATH/IPA_WATCH_NEW_PROFILE.mobileprovision $TMP_PATH/Payload/mttlite.app/Watch/mttlite\ WatchOS\ App.app/PlugIns/mttlite\ WatchOS\ App\ Extension.appex/embedded.mobileprovision&#10;cp $PROFILE_PATH/IPA_WATCH_EXTENSION_NEW_PROFILE.mobileprovision $TMP_PATH/Payload/mttlite.app/Watch/mttlite\ WatchOS\ App.app/embedded.mobileprovision&#10;...</span><br></pre></td></tr></table></figure>
 <p>代码里面只举例了iPA含有Widget以及WatchOS的情况，如果你还含有其他Extension，都需要替换对应旧的的Profile, 需要注意的是<font color="#ff0000">WatchOS包含的Plugins也需要对应替换。</font></p>
@@ -150,7 +149,7 @@ var _hmt = _hmt || [];
     
     <footer class="article-footer">
       
-        <a data-url="http://penny.li/2016/04/19/resign_ipa/" data-id="cin7e2xa10001dqspsd8f47pw" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://penny.li/2016/04/19/resign_ipa/" data-id="cin7eeybp0001gxsp8xkzz8fi" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
