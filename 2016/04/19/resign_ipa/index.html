@@ -4,22 +4,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>pennyli&#39;s blog</title>
+  <title>IPA多Target重签名以及自动修改Bundle ID | pennyli&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
   <!-- No Baidu Siteapp-->
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="pennyli's blog">
-<meta property="og:url" content="http://penny.li/index.html">
+  <meta name="description" content="日常iOS开发都会遇到这样的需求，如何通过脚本动态修改IPA的Bundle ID从而实现一机多包呢？实际上现在很多开源的App已经可以满足这样的需求，比如iReSign，或者如果你愿意付费的话甚至可以购买拥有漂亮GUI的AirSign。
+AirSign没有用过，但是iReSign只支持单Target，意思就是你的iPA不能拥有任何Extension,比如Widget，Share,或者Watch等，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IPA多Target重签名以及自动修改Bundle ID">
+<meta property="og:url" content="http://penny.li/2016/04/19/resign_ipa/index.html">
 <meta property="og:site_name" content="pennyli's blog">
-<meta property="og:description">
+<meta property="og:description" content="日常iOS开发都会遇到这样的需求，如何通过脚本动态修改IPA的Bundle ID从而实现一机多包呢？实际上现在很多开源的App已经可以满足这样的需求，比如iReSign，或者如果你愿意付费的话甚至可以购买拥有漂亮GUI的AirSign。
+AirSign没有用过，但是iReSign只支持单Target，意思就是你的iPA不能拥有任何Extension,比如Widget，Share,或者Watch等，">
+<meta property="og:updated_time" content="2016-04-19T12:06:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pennyli's blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="IPA多Target重签名以及自动修改Bundle ID">
+<meta name="twitter:description" content="日常iOS开发都会遇到这样的需求，如何通过脚本动态修改IPA的Bundle ID从而实现一机多包呢？实际上现在很多开源的App已经可以满足这样的需求，比如iReSign，或者如果你愿意付费的话甚至可以购买拥有漂亮GUI的AirSign。
+AirSign没有用过，但是iReSign只支持单Target，意思就是你的iPA不能拥有任何Extension,比如Widget，Share,或者Watch等，">
   
   
     <link rel="icon" href="/img/logo.png">
@@ -90,9 +94,7 @@ var _hmt = _hmt || [];
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-    <article id="post-resign_ipa" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-resign_ipa" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/04/19/resign_ipa/" class="article-date">
   <time datetime="2016-04-19T12:05:13.000Z" itemprop="datePublished">2016-04-19</time>
@@ -105,8 +107,8 @@ var _hmt = _hmt || [];
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/19/resign_ipa/">IPA多Target重签名以及自动修改Bundle ID</a>
+    <h1 class="article-title" itemprop="name">
+      IPA多Target重签名以及自动修改Bundle ID
     </h1>
   
 
@@ -160,119 +162,24 @@ var _hmt = _hmt || [];
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-iTunesLyricApp" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/12/07/iTunesLyricApp/" class="article-date">
-  <time datetime="2015-12-07T14:06:09.000Z" itemprop="datePublished">2015-12-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/07/iTunesLyricApp/">iTunesLyricApp iTunes歌词插件App</a>
-    </h1>
+    <a href="/2015/12/07/iTunesLyricApp/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">iTunesLyricApp iTunes歌词插件App</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://7xotxj.com1.z0.glb.clouddn.com/0060lm7Tgw1eyrgejgo9jj30sg0sg776.jpg?imageView/2/w/160/q/90" alt=""></p>
-<p>为Mac上的iTunes写了一个动态获取歌词的插件类App， 会自动根据播放的歌曲去抓歌词并根据歌曲播放时间轴显示歌词.</p>
-<p>GitHub地址：<a href="https://github.com/iampennyli/iTunesLyricApp">iTunesLyricApp</a></p>
-<p>需要注意：</p>
-<ul>
-<li>歌词主要是从<a href="music.163.com">网易云音乐</a>抓取，可能会因为cookie导致抓取失败。</li>
-<li>智能获取歌词可能会匹配错误。</li>
-<li>如果播放的iTunes Music没有缓存可能会检测不到歌曲。</li>
-</ul>
-<p>针对第二点和第三点可以手动查找然后倒入歌词解决。</p>
-        
-          <p class="article-more-link">
-            <a href="/2015/12/07/iTunesLyricApp/#more">阅读全文</a>
-          </p>
-        
-      
-    </div>
-    
-    <footer class="article-footer">
-      
-        <a data-url="http://penny.li/2015/12/07/iTunesLyricApp/" data-id="cin7dy1bi0004adspj1mxcysk" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-        <a href="http://penny.li/2015/12/07/iTunesLyricApp/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iTunes歌词显示/">iTunes歌词显示</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 
-  
-    <article id="post-aTranslator" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/04/05/aTranslator/" class="article-date">
-  <time datetime="2015-04-05T03:00:00.000Z" itemprop="datePublished">2015-04-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/05/aTranslator/">aTranslator</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://ww2.sinaimg.cn/large/6cb9ee11gw1eykk323aswj20480480sl.jpg" alt=""></p>
-<p>aTranslator是一款基于百度翻译的翻译小工具，具备翻译以及词典的功能，支持10多种语言相互间翻译，特别支持文言文以及粤语翻译，让你一秒钟写诗不再是梦。</p>
-<p>写一个翻译App的初衷一直都有，作为程序猿工作中难免会遇到一些不认识的单词，以前google没有被墙的时候用google translate就感觉特别麻烦，所以就想是否可以写一款基于google的app放在桌面上呢？等到自己动手开始做得时候google已经被gfw了，所以就只能先写了这款基于百度翻译的。百度翻译也有它强大的优势，比如支持关联百科，丰富的双语以及柯林斯例句，还有网络释义等等，在适应中国人学习英语的习惯这方面还是做得非常好的，目前aTranslator其实已经有解析这些东西了，但是还没有将功能开发出来，在后面的版本迭代里面会陆续提供上面说得那些功能。</p>
-<p>后来小伙伴提醒到，<a href="http://translate.google.cn" target="_blank" rel="external">谷歌翻译中国</a> 还可以继续使用，研究了一下，后面可能会考虑将google翻译的结果纳入到aTranslator里面。</p>
-<p><del>目前aTranslator还在App Store审核之中，等到上线到Store的时候，我会更新一下下载链接。如果你有任何问题，可以在下面留言，我第一时间会回复你。</del></p>
-<p>aTranslator已经登陆Mac App Store，如果你有兴趣，可以<a href="https://itunes.apple.com/us/app/atranslator/id980575167?ls=1&amp;mt=12" target="_blank" rel="external">下载</a>一个试试。</p>
-
-      
-    </div>
-    
-    <footer class="article-footer">
-      
-        <a data-url="http://penny.li/2015/04/05/aTranslator/" data-id="cin7dy1bl0007adsp9sr2t9ml" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-        <a href="http://penny.li/2015/04/05/aTranslator/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="2016/04/19/resign_ipa/" data-title="IPA多Target重签名以及自动修改Bundle ID" data-url="http://penny.li/2016/04/19/resign_ipa/"></div>
+  </section>
 </section>
       
       <aside id="sidebar">
