@@ -1,20 +1,18 @@
-extends partial/layout
-
-block site_title
-    != page.title + " · " + config.title
-
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name="description", content=desc)
-
-block container
-    include mixins/post
-    +post(page)
-
-block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
-
-block copyright
-    include partial/copyright
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> iTunesLyricApp iTunes歌词插件App · PennyLi</title><meta name="description" content="iTunesLyricApp iTunes歌词插件App - pennyli"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/sunchongsheng" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/pinggod" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">iTunesLyricApp iTunes歌词插件App</h1><div class="post-info">2015年12月7日</div><div class="post-content"><p><img src="http://7xotxj.com1.z0.glb.clouddn.com/0060lm7Tgw1eyrgejgo9jj30sg0sg776.jpg?imageView/2/w/160/q/90" alt=""></p>
+<p>为Mac上的iTunes写了一个动态获取歌词的插件类App， 会自动根据播放的歌曲去抓歌词并根据歌曲播放时间轴显示歌词.</p>
+<p>GitHub地址：<a href="https://github.com/iampennyli/iTunesLyricApp" target="_blank" rel="external">iTunesLyricApp</a></p>
+<p>需要注意：</p>
+<ul>
+<li>歌词主要是从<a href="music.163.com">网易云音乐</a>抓取，可能会因为cookie导致抓取失败。</li>
+<li>智能获取歌词可能会匹配错误。</li>
+<li>如果播放的iTunes Music没有缓存可能会检测不到歌曲。</li>
+</ul>
+<p>针对第二点和第三点可以手动查找然后倒入歌词解决。</p>
+<a id="more"></a>
+<p>如果使用中有啥问题，可以直接在下反馈给我，会不定期更新和维护，甚至你也可以帮忙修改一下代码。</p>
+<p>直接看截图把</p>
+<p><img src="http://ww1.sinaimg.cn/large/0060lm7Tgw1eyrfy2c3v7j30zk0m816t.jpg" alt="4"></p>
+<p><img src="http://ww4.sinaimg.cn/large/0060lm7Tgw1eyrfxmiaooj30jo0be42n.jpg" alt="1"></p>
+<p><img src="http://ww2.sinaimg.cn/large/0060lm7Tgw1eyrfxasawwj30im0d1dj9.jpg" alt="1"></p>
+<p><img src="http://ww4.sinaimg.cn/large/0060lm7Tgw1eyrfxgeq1wj30n20giag0.jpg" alt="1"></p>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/04/19/resign_ipa/" class="prev">上一篇</a><a href="/2015/04/05/aTranslator/" class="next">下一篇</a></div><div class="copyright"><p>© 2015 - 2016 <a href="http://penny.li">pennyli</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?a36e15d9e2adec9a21fcdd9f686b1ed2";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></body></html>
