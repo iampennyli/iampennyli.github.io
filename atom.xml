@@ -76,7 +76,7 @@
     <link href="http://penny.li/2015/12/07/iTunesLyricApp/"/>
     <id>http://penny.li/2015/12/07/iTunesLyricApp/</id>
     <published>2015-12-07T14:06:09.000Z</published>
-    <updated>2016-04-19T12:10:44.000Z</updated>
+    <updated>2016-04-28T15:55:37.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://7xotxj.com1.z0.glb.clouddn.com/0060lm7Tgw1eyrgejgo9jj30sg0sg776.jpg?imageView/2/w/160/q/90&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;为Mac上的iTunes写了一个动态获取歌词的插件类App， 会自动根据播放的歌曲去抓歌词并根据歌曲播放时间轴显示歌词.&lt;/p&gt;
@@ -122,13 +122,11 @@
     <link href="http://penny.li/2015/04/05/aTranslator/"/>
     <id>http://penny.li/2015/04/05/aTranslator/</id>
     <published>2015-04-05T03:00:00.000Z</published>
-    <updated>2016-04-28T15:53:31.000Z</updated>
+    <updated>2016-04-28T15:54:48.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/6cb9ee11gw1eykk323aswj20480480sl.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;aTranslator是一款基于百度翻译的翻译小工具，具备翻译以及词典的功能，支持10多种语言相互间翻译，特别支持文言文以及粤语翻译，让你一秒钟写诗不再是梦。&lt;/p&gt;
-&lt;p&gt;写一个翻译App的初衷一直都有，作为程序猿工作中难免会遇到一些不认识的单词，以前google没有被墙的时候用google translate就感觉特别麻烦，所以就想是否可以写一款基于google的app放在桌面上呢？等到自己动手开始做得时候google已经被gfw了，所以就只能先写了这款基于百度翻译的。百度翻译也有它强大的优势，比如支持关联百科，丰富的双语以及柯林斯例句，还有网络释义等等，在适应中国人学习英语的习惯这方面还是做得非常好的，目前aTranslator其实已经有解析这些东西了，但是还没有将功能开发出来，在后面的版本迭代里面会陆续提供上面说得那些功能。&lt;/p&gt;
-&lt;p&gt;##hello&lt;br&gt;后来小伙伴提醒到，&lt;a href=&quot;http://translate.google.cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;谷歌翻译中国&lt;/a&gt; 还可以继续使用，研究了一下，后面可能会考虑将google翻译的结果纳入到aTranslator里面。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;aTranslator是一款基于百度翻译的翻译小工具，具备翻译以及词典的功能，支持10多种语言相互间翻译，特别支持文言文以及粤语翻译，让你一秒钟写诗不再是梦。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;写一个翻译App的初衷一直都有，作为程序猿工作中难免会遇到一些不认识的单词，以前google没有被墙的时候用google translate就感觉特别麻烦，所以就想是否可以写一款基于google的app放在桌面上呢？等到自己动手开始做得时候google已经被gfw了，所以就只能先写了这款基于百度翻译的。百度翻译也有它强大的优势，比如支持关联百科，丰富的双语以及柯林斯例句，还有网络释义等等，在适应中国人学习英语的习惯这方面还是做得非常好的，目前aTranslator其实已经有解析这些东西了，但是还没有将功能开发出来，在后面的版本迭代里面会陆续提供上面说得那些功能。&lt;/p&gt;
+&lt;p&gt;后来小伙伴提醒到，&lt;a href=&quot;http://translate.google.cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;谷歌翻译中国&lt;/a&gt; 还可以继续使用，研究了一下，后面可能会考虑将google翻译的结果纳入到aTranslator里面。&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;目前aTranslator还在App Store审核之中，等到上线到Store的时候，我会更新一下下载链接。如果你有任何问题，可以在下面留言，我第一时间会回复你。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;aTranslator已经登陆Mac App Store，如果你有兴趣，可以&lt;a href=&quot;https://itunes.apple.com/us/app/atranslator/id980575167?ls=1&amp;amp;mt=12&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载&lt;/a&gt;一个试试。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xotxj.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-04-28%2023.40.29.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
@@ -138,9 +136,7 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/6cb9ee11gw1eykk323aswj20480480sl.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;aTranslator是一款基于百度翻译的翻译小工具，具备翻译以及词典的功能，支持10多种语言相互间翻译，特别支持文言文以及粤语翻译，让你一秒钟写诗不再是梦。&lt;/p&gt;
-&lt;p&gt;写一个翻译App的初衷一直都有，作为程序猿工作中难免会遇到一些不认识的单词，以前google没有被墙的时候用google translate就感觉特别麻烦，所以就想是否可以写一款基于google的app放在桌面上呢？等到自己动手开始做得时候google已经被gfw了，所以就只能先写了这款基于百度翻译的。百度翻译也有它强大的优势，比如支持关联百科，丰富的双语以及柯林斯例句，还有网络释义等等，在适应中国人学习英语的习惯这方面还是做得非常好的，目前aTranslator其实已经有解析这些东西了，但是还没有将功能开发出来，在后面的版本迭代里面会陆续提供上面说得那些功能。&lt;/p&gt;
-&lt;p&gt;##hello&lt;br&gt;后来小伙伴提醒到，&lt;a href=&quot;http://translate.google.cn&quot;&gt;谷歌翻译中国&lt;/a&gt; 还可以继续使用，研究了一下，后面可能会考虑将google翻译的结果纳入到aTranslator里面。&lt;/p&gt;
+&lt;p&gt;aTranslator是一款基于百度翻译的翻译小工具，具备翻译以及词典的功能，支持10多种语言相互间翻译，特别支持文言文以及粤语翻译，让你一秒钟写诗不再是梦。&lt;br&gt;
     
     </summary>
     
