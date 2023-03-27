@@ -11,9 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script language="javascript" type="text/javascript">
+			function isWx() { //判断是否是微信
+    		var ua = navigator.userAgent.toLowerCase();
+    		return ua.match(/MicroMessenger/i) == "micromessenger";
+			}
 			function install() {
-
-				window.location.assign("https://apps.apple.com/cn/app/hider/id1673693929");
+				if (isWx()) {
+					alert('Plaese open in Safari！');
+				} else {
+					window.location.assign("https://apps.apple.com/cn/app/hider/id1673693929");
+				}
+				
 			}
 		</script>
 	</head>
