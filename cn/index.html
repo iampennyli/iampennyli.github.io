@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!--
+	Strongly Typed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hider App, Hide apps to protect your privacy and focus</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+		<script language="javascript" type="text/javascript">
+			function isWx() { //判断是否是微信
+    		var ua = navigator.userAgent.toLowerCase();
+    		return ua.match(/MicroMessenger/i) == "micromessenger";
+			}
+			function install() {
+				if (isWx()) {
+					alert('请使用Safari系统浏览器打开！');
+				} else {
+					window.location.assign("https://apps.apple.com/cn/app/hider/id1673693929");
+				}
+				
+			}
+		</script>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+						  <img class='image1' src="../images/logo.png""/>
+
+							<h1 id="logo"><a href="index.html">Hider</a></h1>
+							<p>隐藏应用程序，保护您的隐私</p>
+
+							<img class="download" src="../images/download-cn.svg" onclick="install()"/>
+
+					</div>
+				</section>
+
+			<!-- Features -->
+				<section id="features">
+					<div class="container">
+						<header>
+							<h2>Features</h2>
+						</header>
+						<div class="row aln-center">
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="../images/app.PNG" alt="" /></a>
+										<header>
+											<h3>批量分组隐藏应用程序</h3>
+										</header>
+										<p>自定义创建不同分组，批量选择应用程序隐藏，被隐藏的App将会隐藏自己的桌面图标、消息通知以及Spolight搜索任何相关联的文件信息等，让应用程序真正“隐身”！</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="../images/plane.PNG" alt="" /></a>
+										<header>
+											<h3>定时任务隐藏</h3>
+										</header>
+										<p>选择指定的时间区间，隐藏应用程序，当时间到期之后，应用程序自动显示，当您学习时，避免App打扰，让您更加专注！</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small"> 
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="../images/widget.PNG" alt="" /></a>
+										<header>
+											<h3>屏幕小组件</h3>
+										</header>
+										<p>屏幕小组件可以快速帮您隐藏以及显示应用程序</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small"> 
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="../images/statistics.jpg" alt="" /></a>
+										<header>
+											<h3>数据统计</h3>
+										</header>
+										<p>统计定时任务次数以及任务累计时间，让您更有成就感！</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small"> 
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="../images/password.jpg" alt="" /></a>
+										<header>
+											<h3>密码保护</h3>
+										</header>
+										<p>不同的密码保护，让您能放心隐藏私密应用程序，不被他人发现。支持App数字密码、FaceID验证、以及替身密码。使用替身密码输入时，Hider将会变成一个笔记应用，最大程度保证您的隐私信息！</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small"> 
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="../images/disable.jpg" alt="" /></a>
+										<header>
+											<h3>禁止安装以及卸载应用程序</h3>
+										</header>
+										<p>您可以使用Hider屏蔽AppStore，这样可以禁止下载应用程序；也可以开启禁止删除，可以防止应用误删。</p>
+									</section>
+
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<img class="download" src="../images/download-cn.svg" onclick="install()"/>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<p style="color:gray;font-size:10px;">Copyright © 2022-2023 Daisy dai <br><a href="hider/agreement/index.html">Termes </a><a href="hider/privacy/index.html">Privacy    </a><a href="mailto:help@gethider.app">Contract</a></p>
+
+						</div>
+					</div>
+				</section>
+		</div>
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
